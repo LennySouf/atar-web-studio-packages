@@ -7,6 +7,7 @@ const LINKS = [
   { href: "#inclus", label: "Ce qui est inclus" },
   { href: "#methode", label: "Méthode" },
   { href: "#tarifs", label: "Tarifs" },
+  { href: "#abonnement", label: "Abonnement" },
 ];
 
 export function SiteHeader() {

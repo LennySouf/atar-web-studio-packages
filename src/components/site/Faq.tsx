@@ -1,3 +1,4 @@
+import { MAINTENANCE } from "@/lib/maintenance";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const QA = [
@@ -5,6 +6,9 @@ const QA = [
   { q: "Combien de temps faut-il pour avoir mon site ?", a: "Comptez environ 7 jours pour la formule Essentiel, et 2 à 4 semaines pour les sites plus complets." },
   { q: "Est-ce que je pourrai modifier mon site moi-même ?", a: "Oui, les informations du quotidien (horaires, carte, prix, photos) restent faciles à changer. Je peux aussi le faire pour vous." },
   { q: "Et si je n'ai pas de belles photos ?", a: "On trouve une solution ensemble : sélection d'images adaptées ou conseils simples pour photographier votre lieu et vos produits." },
+  { q: "Qui paie le nom de domaine et l'hébergement ?", a: `Ils sont compris dans l'abonnement ${MAINTENANCE.name} à ${MAINTENANCE.monthlyPrice} € par mois. Vous n'avez aucune autre facture à gérer pour que votre site reste en ligne.` },
+  { q: "Je peux arrêter l'abonnement ?", a: `Oui. Après ${MAINTENANCE.commitmentMonths} mois, vous pouvez résilier avec ${MAINTENANCE.noticeMonths} mois de préavis. Votre nom de domaine est à vous : je vous le transfère sans frais.` },
+  { q: "Qu'est-ce qu'une « petite modification » ?", a: "Changer vos horaires, votre carte, vos prix, une photo ou un texte. Ajouter une nouvelle page ou refaire le site fait l'objet d'un devis à part." },
 ];
 
 export function Faq() {

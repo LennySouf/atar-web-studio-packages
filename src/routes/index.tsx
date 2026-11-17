@@ -6,6 +6,7 @@ import { Examples } from "@/components/site/Examples";
 import { Included } from "@/components/site/Included";
 import { Process } from "@/components/site/Process";
 import { Pricing } from "@/components/site/Pricing";
+import { Maintenance } from "@/components/site/Maintenance";
 import { Faq } from "@/components/site/Faq";
 import { QuoteForm, type QuotePrefill } from "@/components/site/QuoteForm";
 import { SiteFooter } from "@/components/site/SiteFooter";
@@ -45,6 +46,7 @@ function Index() {
         <Included />
         <Process />
         <Pricing onChoose={(o) => goToForm({ formule: o.name })} />
+        <Maintenance onChoose={() => goToForm({})} />
         <Faq />
         <QuoteForm prefill={prefill} />
       </main>
