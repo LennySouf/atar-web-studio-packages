@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Single landing page at `/` composed from `src/components/site/*`; content data (offers, examples, quote schema) lives in `src/lib/*` so copy and prices change in one place.
+- Quote requests are validated with the shared zod schema and inserted by a public server function (`src/lib/quote.functions.ts`) into `quote_requests` with an anon insert-only policy — nobody can read submissions from the browser, and the owner's email address must never appear in client code.
